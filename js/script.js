@@ -39,8 +39,8 @@ for (let data of inputs) {
 function logic() {
   let data = this.innerHTML;
   let inputData = display.innerHTML;
-  if (data === ".") {
-    if (!inputData.includes(".")) {
+  if (data === "." ) {
+    if (!inputData.includes(".") && inputData.length>0) {
       display.innerHTML = inputData + data;
     }
   } else if (data == "Clear") {
